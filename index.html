@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 存取資料範例</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <div class="container">
+    <div class="comment-box">
+      <div class="comment-form">
+        <div class="header">留言板</div>
+        <form action="#" onsubmit="event.preventDefault(); postComment()">
+          <div> 
+            <input type="text" id="name" placeholder="Name"/>
+          </div>
+          <div>
+            <textarea id="comment" rows="3" cols="30" placeholder="Comment"></textarea>
+          </div>
+          <button type="submit">送出</button>
+        </form>  
+      </div>
+      <div>
+        <h4 class="header">觀看他人意見</h4>
+        <div id="comments"></div>
+      </div>
+      <div class="footer"><hr><p>&copy 2018 by lhchen</p></div>
+    </div>
+  </div>
+</body>
+<!-- partial -->
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
